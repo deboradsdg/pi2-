@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: var(--cor8);
+    color: var(--cor10);
+}
+@font-face {
+    font-family: FP;
+    src: url(../MIDIAS/FONTES/milany-regular.otf);
+}
+:root {
+  --cor1: #00d870;
+  --cor2: #00bf63;
+  --cor3: #00743c;
+  --cor4: #ff6565;
+  --cor5: #ff2056;
+  --cor6: #af002a;
+  --cor7: #ffe88a;
+  --cor8: #ffde59;
+  --cor9: #141414;
+  --cor10: #f1f1f1;
+  --cor11: #33333b;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--cor9), var(--cor9), var(--cor2));
+}
