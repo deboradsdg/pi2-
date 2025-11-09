@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/Cadastro.css">
+    <link rel="shortcut icon" href="../MIDIAS/IMAGENS/PRINCIPAL.png" type="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PIZZA ONE</title>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <form action="../PHP/Login.php" method="POST">
+                <H1>LOGIN</H1>
+                
+                <div class="inputBox">
+                    <label for="loginIdentificador" class="labelInput">E-mail</label>
+                    <input type="text" name="identificador" id="loginIdentificador" class="inputUser" required>
+                </div>
+                
+                <div class="inputBox">
+                    <label for="loginSenha" class="labelInput">Senha</label>
+                    <input type="password" name="senha" id="loginSenha" class="inputUser" required>
+                </div>
+                
+                <input type="submit" name="submit" id="loginSubmit">
+                <p class="but" id="toCadastro">Não possui uma conta?</p>
+            </form>
+        </div>
+        <div class="logo"><img src="../MIDIAS/IMAGENS/PRINCIPAL.png" alt=""></div>
+        
+        <div class="box2">
+            <form action="../PHP/cadastrocliente.php" method="POST">
+             <input type="submit" name="submit" value="Enviar">
+                <H1>CADASTRO</H1>
+                    <div class="inputBox">
+                        <label for="cadastroNome" class="labelInput">Nome completo</label>
+                        <input type="text" name="nome" id="cadastroNome" class="inputUser" required>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroEmail" class="labelInput">E-mail</label>
+                        <input type="email" name="email" id="cadastroEmail" class="inputUser" required>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroTelefone" class="labelInput">Telefone</label>
+                        <input type="tel" name="telefone" id="cadastroTelefone" class="inputUser" required>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroLogradouro" class="labelInput">Logradouro</label>
+                        <input type="text" name="logradouro" id="cadastroLogradouro" class="inputUser" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroNumero" class="labelInput">Número</label>
+                        <input type="text" name="numero" id="cadastroNumero" class="inputUser" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroComplemento" class="labelInput">Complemento (opcional)</label>
+                        <input type="text" name="complemento" id="cadastroComplemento" class="inputUser">
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroBairro" class="labelInput">Bairro</label>
+                        <input type="text" name="bairro" id="cadastroBairro" class="inputUser" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroCidade" class="labelInput">Cidade</label>
+                        <input type="text" name="cidade" id="cadastroCidade" class="inputUser" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroUF" class="labelInput">UF</label>
+                        <input type="text" name="uf" id="cadastroUF" class="inputUser" maxlength="2" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroCEP" class="labelInput">CEP</label>
+                        <input type="text" name="cep" id="cadastroCEP" class="inputUser" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroSenha" class="labelInput">Senha</label>
+                        <input type="password" name="senha" id="cadastroSenha" class="inputUser" required>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="cadastroConfSenha" class="labelInput">Confirme a senha</label>
+                        <input type="password" name="confSenha" id="cadastroConfSenha" class="inputUser" required>
+                    </div>
+                    <input type="submit" name="submit" id="cadastroSubmit">
+                    <p class="but">Já possui uma conta?</p>
+                </form>
+        </div>
+    </main>
+    <script src="../JS/Cadastro.js"></script>
+</body>
+</html>
